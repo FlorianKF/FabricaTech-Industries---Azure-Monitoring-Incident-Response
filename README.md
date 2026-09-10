@@ -18,7 +18,7 @@ The company wants to implement a monitoring strategy that allows the IT team to:
 - analyze logs;
 - receive alerts when critical conditions occur;
 - respond quickly to incidents.
-
+- 
   ## Objectives of study case
 
 Here, we aims to:
