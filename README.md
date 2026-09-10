@@ -37,9 +37,9 @@ FabricaTech would need to use several Azure services to monitor its production e
 |Services | Purposes |
 |----------|-------|
 |Azure Advisor |will assess FabricaTech's resources and formulate recommendations to improve its Azure environment in order to guarantee its availability, reliability and performance|
-|Azure Service Health|
-|Azure Monitor|
-|Log Analytics|
-|Application Insights|
-|Alerts|
+|Azure Service Health|To provide information about Azure incidents and planned maintenance|
+|Azure Monitor|Monitoring Azure resources and their performance|
+|Log Analytics|To analyzes logs in case of problem´s investigation|
+|Application Insights|Monitors application performance and errors|
+|Alerts|Notifies the IT team when a problem is detected|
 
