@@ -43,3 +43,54 @@ FabricaTech would need to use several Azure services to monitor its production e
 |Application Insights|Monitors application performance and errors|
 |Alerts|Notifies the IT team when a problem is detected|
 
+### How they work together?
+
+```mermaid
+flowchart TD
+A[Azure resources] --> B[Azure Monitor]
+B --> C[Metrics + Logs]
+C --> D[Alerts]
+C --> E[Log analytics]
+D --> F[Notifictions]
+E --> G[Investigation]
+```
+### 2. Scenario Incident 
+
+The application used by employees become ***verry slow or unvailable***
+The IT team must identify the cause by following a hierarchical order of operations:
+
+### Step 1 --> Service Health
+
+The IT team first checks Azure Service Health to look for:
+
+- An Azure incident;
+- Planned maintenance;
+- Or a regional Azure issue.
+
+So then, if no Azure service issue is reported; 
+
+### Step 2 ---> Azure Monitor 
+
+Here, they will examine resource metrics; for example, if the VM CPU usage = 95%, 
+It could cause a performance issue due to the excessive consumption.
+If no, if everything okay at this stage, the IT team will have to go for:  
+
+### Step 3 --> Application Insights
+
+The team checks the application in ***Application Insights.***
+if they find that the application's response time is very high,
+it could confirm  the raison of the  application issue. 
+
+If no,
+
+### Step 4 ---> Log Analytics
+
+The team uses Log Analytics to examine the logs.
+If it discovers several application errors, they might then have found the root cause and be able to apply a fix.
+After applying the fix:
+
+### Step  --> Verifiction
+Teams must always run the application to verify that the problem has been correctly resolved after an intervention.
+
+
+
