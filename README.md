@@ -31,7 +31,7 @@ Here, we aims to:
 # Proposed solution approach
 
 
-### 1. Monitoring Strategy: 
+## 1. Monitoring Strategy: 
 FabricaTech would need to use several Azure services to monitor its production environment, and each service would have a specific role.
 
 |Services | Purposes |
@@ -54,7 +54,7 @@ C --> E[Log analytics]
 D --> F[Notifictions]
 E --> G[Investigation]
 ```
-### 2. Scenario Incident 
+## 2. Scenario Incident 
 
 The application used by employees become ***verry slow or unvailable***
 The IT team must identify the cause by following a hierarchical order of operations:
@@ -92,5 +92,6 @@ After applying the fix:
 ### Step  --> Verifiction
 Teams must always run the application to verify that the problem has been correctly resolved after an intervention.
 
+## 3. Alerting Model
 
 
